@@ -58,6 +58,28 @@ public class Pocitac {
         System.out.println("Pocitac se vypnul.");
     }
 
+    public void vytvorSouborOVelikosti(long velikost) {
+        if (jeZapnuty == true) {
+        } else {
+            System.err.println("Pocitac je vypnuty.");
+        }
+        long aktualniVyuziteMisto = pevnyDisk.getVyuziteMisto();
+        long noveVyuziteMisto = aktualniVyuziteMisto + velikost;
+        pevnyDisk.setVyuziteMisto(noveVyuziteMisto);
+        System.out.println("Vyuzite misto: " + noveVyuziteMisto);
+    }
+
+    public void vymazSouboryOVelikosti(long velikost) {
+        if (jeZapnuty == true) {
+        } else {
+            System.err.println("Pocitac je vypnuty.");
+        }
+        long aktualniVyuziteMisto = pevnyDisk.getVyuziteMisto();
+        long noveVyuziteMisto = aktualniVyuziteMisto - velikost;
+        pevnyDisk.setVyuziteMisto(noveVyuziteMisto);
+        System.out.println("Vyuzite misto: " + noveVyuziteMisto);
+    }
+
     @Override
     public String toString() {
         if (jeZapnuty == false) {
