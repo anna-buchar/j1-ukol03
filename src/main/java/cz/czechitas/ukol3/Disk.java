@@ -9,8 +9,10 @@ public class Disk {
     public String toString() {
         if (kapacita == 0) {
             System.err.println("Chybi disk.");
+            return "";
         } else if (vyuziteMisto >= kapacita) {
             System.err.println("Kapacita disku je plna.");
+            return "";
         } else {
             return "Kapacita disku: " + kapacita + ", z toho vyuzito: " + vyuziteMisto + ".";
         }
