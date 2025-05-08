@@ -7,6 +7,9 @@ public class Procesor {
 
     @Override
     public String toString() {
+//        if (rychlost == 0) {
+//            System.err.println("Chybi procesor.");
+//        }
         return "Vyrobce procesoru: " + vyrobce + ", rychlost procesoru: " + rychlost + ".";
     }
 }

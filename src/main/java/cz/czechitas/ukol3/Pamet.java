@@ -6,6 +6,11 @@ public class Pamet {
 
     @Override
     public String toString() {
-        return "Kapacita pameti: " + kapacita + ".";
+//        if (kapacita == 0) {
+//            System.err.println("Chybi pamet.");
+//            return "";
+//        } else {
+            return "Kapacita pameti: " + kapacita + ".";
+//        }
     }
 }

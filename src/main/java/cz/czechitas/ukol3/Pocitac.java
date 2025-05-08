@@ -9,6 +9,15 @@ public class Pocitac {
     public boolean jeZapnuty;
 
     public void zapniSe() {
+        if (cpu == null) {
+            System.err.println("Chybi procesor.");
+        }
+        if (ram == null) {
+            System.err.println("Chybi pamet.");
+        }
+        if (pevnyDisk == null) {
+            System.err.println("Chybi disk.");
+        }
 
        if (jeZapnuty == true) {
            System.err.println("Pocitac uz je zapnuty.");
