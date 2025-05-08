@@ -8,6 +8,31 @@ public class Pocitac {
 
     public boolean jeZapnuty;
 
+    public Procesor getCpu() {
+        return cpu;
+    }
+
+    public Pamet getRam() {
+        return ram;
+    }
+
+    public Disk getPevnyDisk() {
+        return pevnyDisk;
+    }
+
+    public void setRam(Pamet ram) {
+        this.ram = ram;
+    }
+
+    public void setPevnyDisk(Disk pevnyDisk) {
+        this.pevnyDisk = pevnyDisk;
+    }
+
+    public void setCpu(Procesor cpu) {
+        this.cpu = cpu;
+    }
+
+
     public void zapniSe() {
         if (cpu == null) {
             System.err.println("Chybi procesor.");
@@ -35,16 +60,16 @@ public class Pocitac {
 
     @Override
     public String toString() {
-        if (jeZapnuty == true) {
-            return "CPU procesoru: " + cpu
-                    + ", pamet RAM: " + ram
-                    + ", pevny disk: " + pevnyDisk
-                    + ". Pocitac je zapnuty.";
+        if (jeZapnuty == false) {
+            return cpu.toString() + "\n"
+                    + ram.toString() + "\n"
+                    + pevnyDisk.toString() + "\n"
+                    + "Pocitac je vypnuty.";
         } else {
-            return "CPU procesoru: " + cpu
-                    + ", pamet RAM: " + ram
-                    + ", pevny disk: " + pevnyDisk
-                    + ". Pocitac je vypnuty.";
+            return cpu.toString() + "\n"
+                    + ram.toString() + "\n"
+                    + pevnyDisk.toString() + "\n"
+                    + "Pocitac je zapnuty.";
         }
     }
 }

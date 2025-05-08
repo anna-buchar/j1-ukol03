@@ -4,13 +4,16 @@ public class Pamet {
 
     private long kapacita;
 
+    public long getKapacita() {
+        return kapacita;
+    }
+
+    public void setKapacita(long kapacita) {
+        this.kapacita = kapacita;
+    }
+
     @Override
     public String toString() {
-//        if (kapacita == 0) {
-//            System.err.println("Chybi pamet.");
-//            return "";
-//        } else {
-            return "Kapacita pameti: " + kapacita + ".";
-//        }
+            return "Kapacita pameti: " + kapacita + "bajtu.";
     }
 }

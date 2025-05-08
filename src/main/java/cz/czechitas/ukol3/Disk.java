@@ -5,16 +5,24 @@ public class Disk {
     private long kapacita;
     private long vyuziteMisto;
 
+    public long getKapacita() {
+        return kapacita;
+    }
+
+    public long getVyuziteMisto() {
+        return vyuziteMisto;
+    }
+
+    public void setKapacita(long kapacita) {
+        this.kapacita = kapacita;
+    }
+
+    public void setVyuziteMisto(long vyuziteMisto) {
+        this.vyuziteMisto = vyuziteMisto;
+    }
+
     @Override
     public String toString() {
-//        if (kapacita == 0) {
-//            System.err.println("Chybi disk.");
-//            return "";
-//        } else if (vyuziteMisto >= kapacita) {
-//            System.err.println("Kapacita disku je plna.");
-//            return "";
-//        } else {
-            return "Kapacita disku: " + kapacita + ", z toho vyuzito: " + vyuziteMisto + ".";
-//        }
+            return "Kapacita disku: " + kapacita + "bajtu, z toho vyuzito: " + vyuziteMisto + "bajtu.";
     }
 }
