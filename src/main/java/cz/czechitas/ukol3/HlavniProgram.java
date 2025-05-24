@@ -26,10 +26,10 @@ public class HlavniProgram {
         mujPocitac.setPevnyDisk(mujDisk);
 
         mujPocitac.zapniSe();
-        System.out.println(mujPocitac.toString());
+        System.out.println(mujPocitac);
 
         mujPocitac.vytvorSouborOVelikosti(1_251_635_200L);
-        System.out.println(mujPocitac.toString());
+        System.out.println(mujPocitac);
 
         System.out.println("Program spuštěn.");
     }

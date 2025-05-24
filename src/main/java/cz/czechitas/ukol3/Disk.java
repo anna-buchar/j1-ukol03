@@ -19,7 +19,7 @@ public class Disk {
 
     public void setVyuziteMisto(long vyuziteMisto) {
         this.vyuziteMisto = vyuziteMisto;
-        if (vyuziteMisto >= kapacita) {
+        if (vyuziteMisto > kapacita) {
             System.err.println("Kapacita disku je plna.");
         }
         if (vyuziteMisto < 0) {
